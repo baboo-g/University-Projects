@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <title>REMOVE AIRPORT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007399;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="topspace"></div>
+    <br>
+    <br>
+
+    <form>
+        <label for="airportid">Airport ID:</label>
+        <input type="text" id="airportid" name="airportid" required>
+
+        <label for="airportname">Airport Name:</label>
+        <input type="text" id="airportname" name="airportname" required>
+
+        <button type="button" onclick="remove_airport()">Remove Airport</button>
+    </form>
+
+    <script>
+        function remove_airport() {
+            // You can add any logic here to handle the removal of airport.
+            alert('airport removal logic goes here.');
+        }
+    </script>
+
+</body>
+</html>

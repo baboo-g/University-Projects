@@ -1,0 +1,85 @@
+body{
+
+    background-image:url(Pictures/airport.svg);
+    background-repeat:no-repeat;
+	background-size:cover;
+
+}
+.heading{
+	color:rgb(96, 113, 143);
+	text-align: center;
+	font-size: 250%;	 
+}
+hr{
+	height:2px;
+	background-color:black;
+}
+p{
+	font-size:115%;
+	padding:1%;
+	
+}
+b{
+	padding:1%;
+}
+.img{
+	width:390px;
+	height:290px;
+	object-fit: cover;
+	padding:20px;
+    
+	
+}
+.img:hover{
+	width:420px;
+	height:320px;
+	padding:0px;
+	padding-top:1%;
+
+}
+.container{
+	display:inline-flex;
+	justify-content: space-between;	/*for main page icons*/
+	padding-left: 0%;
+	
+}
+
+.container1{
+	display:inline-flex;
+	justify-content: space-between;	 /*for user page icons*/
+	padding-left: 11%;
+	
+}
+
+.container2{
+	display:inline-flex;
+	justify-content: space-between; /*for guest page icons*/	
+	padding-left: 32%;
+	
+}
+
+ .item{
+ 	text-align: center;
+ }
+
+
+
+.title
+{ 
+	font-size:30px;	
+	text-decoration:bold;
+}
+.des{
+	color:transparent;
+	transition:all 0.5s ease-in-out 0s;
+	font-size: 20px;
+}
+
+.item:hover .des{  
+	color: rgb(44, 51, 46);
+
+	
+}
+.topspace{
+	padding-bottom: 11%;
+}

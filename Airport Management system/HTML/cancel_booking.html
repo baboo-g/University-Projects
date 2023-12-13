@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <title>CANCEL BOOKING</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007399;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+   
+<div class="topspace"></div>
+    <form>
+
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required>
+
+        <label for="ticketId">Ticket ID:</label>
+        <input type="text" id="ticketId" name="ticketId" required>
+
+
+        <label for="seatnumber">Seat Number:</label>
+        <input type="text" id="seatnumber" name="seatnumber" required>
+
+
+
+
+        <button type="button" onclick="cancelbooking()">Cancel booking</button>
+    </form>
+
+    <script>
+        function cancelbooking() {
+            // if such ticket with this user id exists then cancel booking otherwise display the following ticket does not exist
+            alert('booking cancellation logic goes here.');
+        }
+    </script>
+
+</body>
+</html>
