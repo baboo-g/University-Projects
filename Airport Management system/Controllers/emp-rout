@@ -1,0 +1,61 @@
+// const service = require('../Services/employee-services')
+
+// router.get('/', async (req, res) => {
+//     const employees = await service.getAllEmployees()
+//     res.send(employees)
+// })
+
+// router.get('/:id', async (req, res) => {
+//     const employee = await service.getEmployeebyId(req.params.id)
+//     if(employee == undefined){
+//         res.status(404).json('No Record Found')
+//     }
+//     else{
+//         res.send(employee)
+//     }
+// })
+
+// router.delete('/:id', async (req, res) => {
+//     const count = await service.deletebyid(req.params.id)
+//     if(count == 0){
+//         res.status(404).json("No Record exits in then database with id " +[req.params.id])
+//     }
+//     else{
+//         res.send("Record deleted Successfully!")
+//     }
+// })
+
+// router.post('/', async(req, res) =>{
+//     await service.insert(req.body)
+//     res.status(201).send("Added Successfully.")
+// })
+
+// router.put('/:id', async(req, res) =>{
+//     const c = await service.insert(req.body, req.params.id)
+//     if(c > 0){
+//         res.status(201).send("Updated Successfully.")
+//     }   
+//     else{
+//         res.status(404).send("Record does not exist in the database.")
+//     } 
+// })
+
+
+
+
+
+
+
+
+
+
+// router.post('/details', async(req, res) =>{
+//     const requirements = await service.book_flight(req.body)
+//     if(requirements == undefined){
+//         res.status(404).send("There are No flights in operation with these Requirements")
+//         // res.send(requirements)
+//     }
+//     else if(req.body.departure_city == requirements.departure_city && req.body.arrival_city == requirements.arrival_city){
+//         res.send(requirements)
+//     }
+// })
